@@ -1,0 +1,547 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f5f3f0;
+
+    color: #222;
+
+    min-height: 100vh;
+
+    padding: 40px 20px;
+}
+
+
+.container {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1.2fr
+        1fr;
+
+    grid-template-rows:
+        240px
+        220px
+        240px;
+
+    gap: 20px;
+}
+
+
+.card {
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+.create {
+
+    background: #ffd86b;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+.create h2 {
+
+    font-size: 30px;
+
+    line-height: 1.05;
+}
+
+.create h2 span {
+
+    color: #6845c4;
+}
+
+.create button {
+
+    border: none;
+
+    background: white;
+
+    color: #6845c4;
+
+    padding: 12px 18px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    width: fit-content;
+}
+
+.small-plant {
+
+    position: absolute;
+
+    right: 20px;
+
+    bottom: -10px;
+
+    font-size: 85px;
+}
+
+.hero {
+
+    background: #6845c4;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero h1 {
+
+    font-size: 42px;
+
+    line-height: 0.95;
+}
+
+.hero h1 span {
+
+    color: #ffd75c;
+}
+
+.stars {
+
+    color: #ffd75c;
+
+    font-size: 22px;
+
+    margin-top: 20px;
+}
+
+.hero p {
+
+    font-size: 14px;
+
+    margin-top: 7px;
+}
+
+.ai {
+
+    background: #ddd3fa;
+}
+
+.ai h2 {
+
+    font-size: 27px;
+
+    line-height: 1.05;
+}
+
+.ai-image {
+
+    background: white;
+
+    border-radius: 15px;
+
+    width: 130px;
+
+    height: 90px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 45px;
+
+    margin-top: 15px;
+}
+
+.ai-text {
+
+    font-size: 12px;
+
+    margin-top: 12px;
+
+    line-height: 1.4;
+}
+
+.watering {
+
+    background: #fff0df;
+}
+
+.watering h2 {
+
+    font-size: 28px;
+
+    line-height: 1.05;
+}
+
+.water-box {
+
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.water-box div {
+
+    background: white;
+
+    padding: 10px 8px;
+
+    border-radius: 10px;
+
+    font-size: 9px;
+
+    text-align: center;
+}
+
+.water-box strong {
+
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 18px;
+}
+
+
+.plants {
+
+    background: white;
+}
+
+.plants h2 {
+
+    font-size: 27px;
+
+    line-height: 1.05;
+}
+
+.plant-list {
+
+    margin-top: 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.plant-list div {
+
+    background: #eee8ff;
+
+    padding: 9px 12px;
+
+    border-radius: 10px;
+
+    font-size: 12px;
+}
+
+.sunlight {
+
+    background: #dcd1fa;
+}
+
+.sunlight h2 {
+
+    font-size: 25px;
+
+    line-height: 1.05;
+}
+
+.sun {
+
+    font-size: 50px;
+
+    margin-top: 12px;
+}
+
+.progress {
+
+    height: 10px;
+
+    width: 100%;
+
+    background: white;
+
+    border-radius: 20px;
+
+    margin-top: 10px;
+}
+
+.progress-bar {
+
+    height: 100%;
+
+    width: 78%;
+
+    background: #6845c4;
+
+    border-radius: 20px;
+}
+
+.sunlight p {
+
+    font-size: 10px;
+
+    margin-top: 8px;
+}
+
+
+.health {
+
+    background: white;
+
+    text-align: center;
+}
+
+.health h2 {
+
+    font-size: 25px;
+}
+
+.health strong {
+
+    display: block;
+
+    font-size: 48px;
+
+    color: #6845c4;
+
+    margin-top: 10px;
+}
+
+.health p {
+
+    font-size: 12px;
+
+    line-height: 1.3;
+}
+
+.avatars {
+
+    font-size: 30px;
+
+    margin-top: 15px;
+}
+
+.growth {
+
+    background: #6845c4;
+
+    color: white;
+}
+
+.growth h2 {
+
+    font-size: 27px;
+
+    line-height: 1.05;
+}
+
+.chart {
+
+    height: 100px;
+
+    display: flex;
+
+    align-items: end;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+.bar {
+
+    width: 30px;
+
+    background: #ffd75c;
+
+    border-radius: 6px 6px 0 0;
+}
+
+.bar1 {
+    height: 30px;
+}
+
+.bar2 {
+    height: 45px;
+}
+
+.bar3 {
+    height: 60px;
+}
+
+.bar4 {
+    height: 78px;
+}
+
+.bar5 {
+    height: 95px;
+}
+
+.growth p {
+
+    font-size: 10px;
+
+    margin-top: 8px;
+}
+
+.schedule {
+
+    background: #ffd86b;
+}
+
+.schedule h2 {
+
+    font-size: 27px;
+
+    line-height: 1.05;
+}
+
+.calendar {
+
+    display: flex;
+
+    gap: 5px;
+
+    margin-top: 20px;
+}
+
+.calendar div {
+
+    background: white;
+
+    border-radius: 8px;
+
+    padding: 10px 5px;
+
+    font-size: 8px;
+
+    flex: 1;
+
+    text-align: center;
+}
+
+.schedule p {
+
+    font-size: 10px;
+
+    margin-top: 15px;
+
+    line-height: 1.4;
+}
+
+
+.card {
+
+    transition: 0.2s;
+}
+
+.card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 850px) {
+
+    .container {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        grid-template-rows: auto;
+
+    }
+
+    .hero {
+
+        grid-column: span 2;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+
+        padding: 15px;
+    }
+
+    .container {
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        grid-template-rows: auto;
+
+        gap: 15px;
+    }
+
+    .card {
+
+        min-height: 220px;
+    }
+
+    .hero {
+
+        grid-column: auto;
+
+        min-height: 250px;
+    }
+
+    .hero h1 {
+
+        font-size: 36px;
+    }
+
+    .create h2,
+    .ai h2,
+    .watering h2,
+    .plants h2,
+    .sunlight h2,
+    .growth h2,
+    .schedule h2 {
+
+        font-size: 25px;
+    }
+
+}
